@@ -95,7 +95,7 @@ if (isset($_POST['bSimpan'])) {
   $nobpkb=$_POST['nobpkb'];
   $nostnk=$_POST['nostnk'];
   $statusstnk=$_POST['statusstnk'];
-  $koneksi=new mysqli("localhost","root","","tokoumb");
+  $koneksi=new mysqli("localhost","root","","showroom");
   $sql="UPDATE `kendaraaan` SET `nomormesin` = '$nomormesin', `nomorrangka` = '$nomorrangka', `jeniskendaraan` = '$jeniskendaraan', `namakendaraan` = '$namakendaraan', `statusstnk` = '$statusstnk' WHERE `kendaraaan`.`nomormesin` = '$Kodekendaraaan';";
   $q=$koneksi->query($sql);
   if ($q) {
